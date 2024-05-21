@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 24px;
+  background-image: url(img/fundo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: hwb(169 16% 5%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem {
+  max-width: 480px;
+  height: 600px;
+  background-image: url(/img/relogio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.relogio {
+  width: 232.5px;
+  height: 232.5px;
+  background-color: black;
+  border-radius: 50%;
+  flex-direction: column;
+  margin-bottom: 48.82px;
+  margin-right: 4px;
+  text-align: end;
+  padding: 8px;
+  position: relative;
+}
+
+.data {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 44px;
+  top: 26px;
+}
+
+.hora {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  position: absolute;
+  top: 68px;
+  right: 12px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 84px;
+}
+
+.dia {
+  font-size: 32px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+
+.segundos {
+  font-size: 64px;
+  font-weight: bold;
+  position: absolute;
+  right: 46px;
+  bottom: -68px;
+}
+
+.pm {
+  font-size: 14px;
+  position: absolute;
+  top: 16px;
+  left: 78px;
+}
+
+.linha1 {
+  width: 192px;
+  height: 2px;
+  background-color: rgba(211, 217, 227, 255);
+  position: absolute;
+  left: 18px;
+  top: 72px;
+}
+
+.linha2 {
+  width: 106px;
+  height: 2px;
+  background-color: rgba(211, 217, 227, 255);
+  position: absolute;
+  bottom: 78px;
+  left: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-repeat: repeat;
+  }
+}
